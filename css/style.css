@@ -1,0 +1,140 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  font-family: var(--ff-raleway);
+}
+
+:root {
+  --color-first: #ea5321;
+  --color-second: #bca508;
+  --color-third: #f28c10;
+  --color-forth: #f4c200;
+  --color-fifth: #f4a7ad;
+  --color-white: #fff;
+  --color-alpha: rgba(0, 0, 0, 0.8);
+
+  --ff-raleway: "Raleway", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  max-height: 80px;
+  max-width: 250px;
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-butten {
+  background-color: var(--color-third);
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.7rem;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+a i {
+  color: var(--color-white);
+  width: 10px;
+  height: 10px;
+}
+
+.sidebar {
+  background-color: var(--color-third);
+  position: fixed;
+  top: 90px;
+  right: -300px;
+  height: 100vh;
+  width: 100%;
+  max-width: 150px;
+  transition: 0.2s linear;
+}
+
+.active {
+  right: 0;
+}
+
+.navbar-list a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.navbar-list li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 760px) {
+  .sidebar {
+    max-width: 250px;
+  }
+  .nav-butten {
+    padding: 1rem;
+    margin: 0 1.5rem;
+  }
+}
+
+/* .navbar-list {
+  display: flex;
+  padding: 0;
+} */
+
+/* .toggle-butten {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  display: none;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 3rem;
+} */
+
+@media (max-width: 600px) {
+  /* .toggle-butten {
+    display: flex;
+  } */
+  /* .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-list {
+    display: flex;
+    align-items: flex-end;
+  } */
+}
