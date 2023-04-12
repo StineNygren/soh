@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: calc(15px + 0.390625vw);
 }
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   min-height: 100vh;
   font-family: var(--ff-raleway);
 }
@@ -29,6 +29,10 @@ body {
   display: flex;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .logo {
   width: 50%;
   max-height: 80px;
@@ -45,14 +49,14 @@ body {
   background-color: var(--color-third);
   border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0.7rem;
+  padding: calc(6px + 1.5625vw);
   text-decoration: none;
-  margin: 0 0.5rem;
+  margin: 0 0.2rem;
 }
-a i {
+.nav-butten i {
   color: var(--color-white);
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px; */
 }
 
 .sidebar {
@@ -87,6 +91,43 @@ a i {
     padding: 1rem;
     margin: 0 1.5rem;
   }
+}
+
+/* main */
+
+/* main > *, */
+/* .hero-section > *  */
+.padding {
+  padding: calc(8px + 1.5625vw);
+}
+
+.main-button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-third);
+  color: var(--color-white);
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 55px;
+  text-decoration: none;
+  padding: 5px 5px 5px 20px;
+}
+
+.arrow-container i {
+  color: #f28c10;
+}
+
+.arrow-container {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  padding: 7px 13px;
+}
+
+.front-img img {
+  margin-top: calc(8px + 1.5625vw);
+  width: 100vw;
 }
 
 /* .navbar-list {
